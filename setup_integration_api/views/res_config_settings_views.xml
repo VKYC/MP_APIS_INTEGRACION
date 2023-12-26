@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<odoo>
+    <!-- Inherit from the configuration form to add a setting. -->
+    <record id="base_settings_api_integration_form" model="ir.ui.view">
+        <field name="name">base_settings_api_integration_form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='recaptcha']" position="after">
+                <div class="col-12 col-lg-6 o_setting_box" id="api_custom_integration">
+                    <label string="Primera Api (URL)" for="api_first_url"/>
+                    <div class="text-muted">
+                        Primera Api (URL)
+                    </div>
+                    <field name="api_first_url"/>
+                    <label string="Primera Api (KEY)" for="api_first_key"/>
+                    <div class="text-muted">
+                        Primera Api (KEY)
+                    </div>
+                    <field name="api_first_key"/>
+                    <label string="Segunda Api (URL)" for="api_second_url"/>
+                    <div class="text-muted">
+                        Segunda Api (URL)
+                    </div>
+                    <field name="api_second_url"/>
+                    <label string="Segunda Api (KEY)" for="api_second_key"/>
+                    <div class="text-muted">
+                        Segunda Api (KEY)
+                    </div>
+                    <field name="api_second_key"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
