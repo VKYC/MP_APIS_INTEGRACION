@@ -8,24 +8,24 @@
         <field name="arch" type="xml">
             <xpath expr="//div[@id='recaptcha']" position="after">
                 <div class="col-12 col-lg-6 o_setting_box" id="api_custom_integration">
-                    <label string="Primera Api (URL)" for="api_first_url"/>
+                    <label string="API RIN DE GASTOS (URL)" for="api_first_url"/>
                     <div class="text-muted">
-                        Primera Api (URL)
+                        API RIN DE GASTOS (URL)
                     </div>
                     <field name="api_first_url"/>
-                    <label string="Primera Api (KEY)" for="api_first_key"/>
+                    <label string="API RIN DE GASTOS (KEY)" for="api_first_key"/>
                     <div class="text-muted">
-                        Primera Api (KEY)
+                        API RIN DE GASTOS (KEY)
                     </div>
                     <field name="api_first_key"/>
-                    <label string="Segunda Api (URL)" for="api_second_url"/>
+                    <label string="API SII (URL)" for="api_second_url"/>
                     <div class="text-muted">
-                        Segunda Api (URL)
+                        API SII (URL)
                     </div>
                     <field name="api_second_url"/>
-                    <label string="Segunda Api (KEY)" for="api_second_key"/>
+                    <label string="API SII (KEY)" for="api_second_key"/>
                     <div class="text-muted">
-                        Segunda Api (KEY)
+                        API SII (KEY)
                     </div>
                     <field name="api_second_key"/>
                 </div>
